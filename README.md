@@ -1,2 +1,3 @@
-# boilerplate
-Basic HTML and CSS setup for simple web design
+# Design a Photo Sharing App
+
+Project for MI-449
