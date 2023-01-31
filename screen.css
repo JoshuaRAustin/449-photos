@@ -1,1 +1,162 @@
-/* Add screen styles below */
+/* 
+Have the scrollbar appear permanently on the right so the page isn't affected by its absence.
+https://stackoverflow.com/questions/1417934/how-to-prevent-scrollbar-from-repositioning-web-page
+*/
+html {
+	overflow-y: scroll;
+}
+
+body {
+	height: auto;
+	font-family: Helvetica;
+}
+
+main {
+	max-width: 625px;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-title-group {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.logo {
+	background-image: url("assets/img000.png");
+	background-repeat: no-repeat;
+	background-position: -15px -26px;
+	background-size: 100px;
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 8px;
+	width: 50px;
+	height: 50px;
+}
+
+.title {
+	height: fit-content;
+	font-size: xx-large;
+}
+
+.home-button {
+	justify-self: end;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+ul {
+	all: unset;
+}
+
+a {
+	all: unset;
+	cursor: pointer;
+}
+
+.basic-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	background-color: #44f;
+	border-radius: 8px;
+	color: white;
+}
+
+.image-grid {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.image-grid-item {
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 5px 5px black;
+	cursor: pointer;
+}
+
+.image-grid-link-item {
+	
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-image {
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.image0-link {
+	background-image: url("assets/img000.png");
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 5px 5px black;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.image1 {
+	background-image: url("assets/img005.png");
+}
+
+.image2 {
+	background-image: url("assets/img007.png");
+}
+
+.image3 {
+	background-image: url("assets/img008.png");
+}
+
+.image4 {
+	background-image: url("assets/img011.png");
+}
+
+.image5 {
+	background-image: url("assets/img013.png");
+}
+
+.image6 {
+	background-image: url("assets/img019.png");
+}
+
+.image7 {
+	background-image: url("assets/img020.png");
+}
+
+.image8 {
+	background-image: url("assets/img022.png");
+}
+
