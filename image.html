@@ -22,7 +22,7 @@
       <h2>The Mandelbrot Set at its purest</h2>
       <img class="page-image" src="assets/img000.png" alt="The Mandelbrot set">
       <p>
-        The Mandelbrot Set is an object defined mathematically. We say a point is "in the Mandelbrot Set" if it satisfies a certain property when fed into the equation defining the Mandelbrot Set. In this case, our equation is defined as such:
+        The Mandelbrot Set is an object defined mathematically. It consists of a bunch of points which are complex numbers, where the vertical axis represents the imaginary numbers and the horizontal axis represents the real numbers. We say a point is "in" the Mandelbrot Set if it satisfies a certain property when fed into the equation defining the Mandelbrot Set. In this case, our equation is defined as such:
       </p>
       <!-- https://temml.org/ for the conversion from latex -->
       <math>
@@ -50,7 +50,7 @@
         <math>
           <mi>c</mi>
         </math>
-        explodes out to infinity when the equaiton is recursively applied. We start with
+        , explodes out to infinity when the equation is recursively applied. We start with
         <math>
           <mrow>
             <msub>
@@ -64,7 +64,11 @@
         and iterate from there.
       </p>
       <p>
-        Determining if a point reaches infinity is technically impossible, so we use a trick. It turns out that if the magnitude of the point (distance from 0) is greater than or equal to 2, the point is guaranteed to explode out to infinity. So, we just pick a maximum number of iterations to test and run it through the equation.
+        Determining if a point reaches infinity is technically impossible, so we use a trick. It turns out that if the magnitude of
+        <math>
+          <mi>z</mi>
+        </math>
+        (distance from 0) is greater than or equal to 2, the point is guaranteed to explode out to infinity. So, we just pick a maximum number of iterations to test and run it through the equation.
       </p>
       <p>
         But where do all those colorful pictures come from? A common method for coloring the Mandelbrot Set is to just look at how many iterations it took for a given point to escape a magnitude of 2 and then apply a coloring function to that value.
